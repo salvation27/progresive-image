@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MyImage from './MyImage';
+import pic1 from './images/1.jpeg'
+import pic2 from "./images/12.jpeg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Progresive Image</h1>
+      <MyImage height = '200px' src={pic1} placeholderSrc={pic2} />
     </div>
   );
 }
